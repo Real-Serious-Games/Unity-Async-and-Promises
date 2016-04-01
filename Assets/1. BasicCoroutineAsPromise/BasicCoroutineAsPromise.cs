@@ -6,7 +6,7 @@ using UnityEngine;
 //
 // Most basic example of wrapping a coroutine in a promise.
 //
-// This doesn't do anything. It's just simply a template to start from.
+// This doesn't do anything much. It's just simply a template to start from.
 //
 public class BasicCoroutineAsPromise : MonoBehaviour
 {
