@@ -9,8 +9,7 @@ using UnityEngine;
 public class CoroutineWithHttpGet : MonoBehaviour
 {
     /// <summary>
-    /// Returns a promise with the deserialised result of a GET request to the specified URL.
-    /// The result of the raw request must be JSON that can be deserialised into type T.
+    /// Returns a promise with the deserialised result of a HTTP GET to the specified URL.
     /// </summary>
     public IPromise<string> Get(string url)
     {

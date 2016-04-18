@@ -6,12 +6,12 @@ using UnityEngine;
 //
 // Same as previous example... but GameObject/MonoBehaviour are instantiated automatically.
 //
-public class HTTPWithProceduralInstantiation : MonoBehaviour
+public class SingletonInstance : MonoBehaviour
 {
     //
     // Singleton instances used to run the coroutine.
     //
-    private static HTTPWithProceduralInstantiation singletonInstance = null;
+    private static SingletonInstance singletonInstance = null;
 
     /// <summary>
     /// Returns a promise with the deserialised result of a GET request to the specified URL.
@@ -23,7 +23,7 @@ public class HTTPWithProceduralInstantiation : MonoBehaviour
         {
             var gameObject = new GameObject("_HTTP_Helper");
             GameObject.DontDestroyOnLoad(gameObject);
-            singletonInstance = gameObject.AddComponent<HTTPWithProceduralInstantiation>();
+            singletonInstance = gameObject.AddComponent<SingletonInstance>();
         }
 
         return singletonInstance.PrivateGet(url);

@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HTTPWithProceduralInstantiationExampleUsage : MonoBehaviour {
+public class SingletonInstanceExampleUsage : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
 
         Debug.Log("Starting coroutine...");
-        HTTPWithProceduralInstantiation.Get("http://www.google.com")
+        SingletonInstance.Get("http://www.google.com")
             .Then(value => Debug.Log("HTML: " + value)) // Signal completion!
             .Catch(ex => Debug.LogException(ex, this)); // Handle any errors that may have occured.
 
