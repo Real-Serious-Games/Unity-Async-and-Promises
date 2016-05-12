@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using RSG;
 
-public class MergingScenesExample : MonoBehaviour {
+public class MergingScenesHardcodedExample : MonoBehaviour {
 
 	void Start ()
     {
